@@ -5,21 +5,21 @@
 class T4 < Formula
   desc "CLI for object storage across S3, GCS, R2, HTTP, and the local filesystem"
   homepage "https://github.com/firetiger-oss/tigerblock"
-  version "0.26.0"
+  version "0.27.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/firetiger-oss/tigerblock/releases/download/v0.26.0/t4_0.26.0_darwin_amd64.tar.gz"
-      sha256 "c0fc882a9f8c54d38e5ae7961726f0a2468077a6ef3eac05c18f2f2fef477720"
+      url "https://github.com/firetiger-oss/tigerblock/releases/download/v0.27.0/t4_0.27.0_darwin_amd64.tar.gz"
+      sha256 "aaa190df48a699d80e066044a401a743031066a66860b2aa0b3811aafc24055e"
 
       define_method(:install) do
         bin.install "t4"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/firetiger-oss/tigerblock/releases/download/v0.26.0/t4_0.26.0_darwin_arm64.tar.gz"
-      sha256 "a6825045dfd3b6739d6f4b005500ee8b37a5b1dd5efa31e5fb57d04e7317a98d"
+      url "https://github.com/firetiger-oss/tigerblock/releases/download/v0.27.0/t4_0.27.0_darwin_arm64.tar.gz"
+      sha256 "3908d1ae4371f6199864d6d73f00ae58775cf3e94b5c16614512ed7af2bae353"
 
       define_method(:install) do
         bin.install "t4"
@@ -29,15 +29,15 @@ class T4 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/firetiger-oss/tigerblock/releases/download/v0.26.0/t4_0.26.0_linux_amd64.tar.gz"
-      sha256 "3cc40ffbb133e444858deb954ac3205bb273232cd350c13566014ab39f4fe818"
+      url "https://github.com/firetiger-oss/tigerblock/releases/download/v0.27.0/t4_0.27.0_linux_amd64.tar.gz"
+      sha256 "a1713b83e48f0db692728444925da0aa0bff382f30e5cc2e653d69bc205fcdf2"
       define_method(:install) do
         bin.install "t4"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/firetiger-oss/tigerblock/releases/download/v0.26.0/t4_0.26.0_linux_arm64.tar.gz"
-      sha256 "df2ad44877780e6cceb88cfbcc9294f81d10088236bd833016c5018a5ec84433"
+      url "https://github.com/firetiger-oss/tigerblock/releases/download/v0.27.0/t4_0.27.0_linux_arm64.tar.gz"
+      sha256 "756919b623452a6051c77eb477865df0030eda874243195c866f81c1760fe5e3"
       define_method(:install) do
         bin.install "t4"
       end
