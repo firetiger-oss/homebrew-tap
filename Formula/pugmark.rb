@@ -5,21 +5,21 @@
 class Pugmark < Formula
   desc "The durable agent runtime built on object storage"
   homepage "https://github.com/firetiger-oss/pugmark"
-  version "0.16.2"
+  version "0.16.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/firetiger-oss/pugmark/releases/download/v0.16.2/pugmark_0.16.2_darwin_amd64.tar.gz"
-      sha256 "99136f881237abbebc131dc1511e59122b465349a5ab657d11dfba21dadb5752"
+      url "https://github.com/firetiger-oss/pugmark/releases/download/v0.16.3/pugmark_0.16.3_darwin_amd64.tar.gz"
+      sha256 "c29f7b7dc24b06d9c1efc4b019fb8743902d3d94df292d1df2b3d64966aa00e8"
 
       define_method(:install) do
         bin.install "pugmark"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/firetiger-oss/pugmark/releases/download/v0.16.2/pugmark_0.16.2_darwin_arm64.tar.gz"
-      sha256 "2ac96fbdecffdda764ee8a143a64008267ad0c5d577756471441841de3c61380"
+      url "https://github.com/firetiger-oss/pugmark/releases/download/v0.16.3/pugmark_0.16.3_darwin_arm64.tar.gz"
+      sha256 "9cbe010cc3494861a6e55906a2136187287422b005b98e1f1ae8e6829de0a24b"
 
       define_method(:install) do
         bin.install "pugmark"
@@ -29,15 +29,15 @@ class Pugmark < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/firetiger-oss/pugmark/releases/download/v0.16.2/pugmark_0.16.2_linux_amd64.tar.gz"
-      sha256 "306b0f4f7342824d28224efa31179a8f4cf0a30f2086b6896f3b3f930a518c4a"
+      url "https://github.com/firetiger-oss/pugmark/releases/download/v0.16.3/pugmark_0.16.3_linux_amd64.tar.gz"
+      sha256 "2e890b34680c0c3609983a0f5ed2c8e8545c684fc9d4b69df6163c505de81c22"
       define_method(:install) do
         bin.install "pugmark"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/firetiger-oss/pugmark/releases/download/v0.16.2/pugmark_0.16.2_linux_arm64.tar.gz"
-      sha256 "020b3106b27fe0ffedd03b3a087b2ae314376a16350f3a07bf9bd08995d427a7"
+      url "https://github.com/firetiger-oss/pugmark/releases/download/v0.16.3/pugmark_0.16.3_linux_arm64.tar.gz"
+      sha256 "fcc99deefab2bbc5b6a0b277d3b87c4a1e72acf8d08d802df54fc5bd4ca6b51b"
       define_method(:install) do
         bin.install "pugmark"
       end
